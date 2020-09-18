@@ -5,6 +5,14 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "Some mdx blog",
+    description: "A simple blog with Gatsby and MDX",
+    url: "https://last.fm",
+    image: '/office.jpg',
+    twitter: "@benawad",
+    author: "BS",
+  },
   /* Your site config here */
   plugins: [
     {
