@@ -29,23 +29,23 @@ export default singlePost
 
 export const pageQuery = graphql`
   query SinglePostQuery($id: String!) {
-    mdx(id: {eq: $id}) {
-        body
+    mdx(id: { eq: $id }) {
+      body
+      excerpt
+      frontmatter {
+        title
+        slug
+        date
         excerpt
-        frontmatter {
-          title
-          slug
-          date
-          excerpt
-          feauterImage {
-            publicURL
-              childImageSharp {
-                fixed {
-                  ...GatsbyImageSharpFixed
-                }
-              }
+        feauterImage {
+          publicURL
+          childImageSharp {
+            fixed {
+              ...GatsbyImageSharpFixed
+            }
           }
         }
-      }  
+      }
+    }
   }
 `

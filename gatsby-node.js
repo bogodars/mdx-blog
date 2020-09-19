@@ -1,20 +1,20 @@
 exports.createPages = async function ({ actions, graphql }) {
-      const { data } = await graphql(`
-        query {
-          allMdx(sort: { fields: frontmatter___date, order: DESC }) {
-            edges {
-              node {
-                frontmatter {
-                  slug
-                }
-                id
-              }
+  const { data } = await graphql(`
+    query {
+      allMdx(sort: { fields: frontmatter___date, order: DESC }) {
+        edges {
+          node {
+            frontmatter {
+              slug
             }
+            id
           }
         }
-      `)
+      }
+    }
+  `)
 
-      // Create paginated pages for posts
+  // Create paginated pages for posts
   const postPerPage = 3
 
   const numPages = Math.ceil(data.allMdx.edges.length / postPerPage)
@@ -42,4 +42,4 @@ exports.createPages = async function ({ actions, graphql }) {
       context: { id },
     })
   })
- }
+}

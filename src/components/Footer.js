@@ -58,7 +58,9 @@ export const Footer = () => {
             <img src={data.linkedin.publicURL} alt="linkedin logo" />
           </a>
         </FooterSocialIcons>
-        <P size="xSmall" color="dark3">@2020 Company. All rights reserved.</P>
+        <P size="xSmall" color="dark3">
+          @2020 Company. All rights reserved.
+        </P>
       </FooterSocialWrapper>
     </FooterWrapper>
   )

@@ -6,7 +6,7 @@ import {
   ContentCard,
   FeatureImage,
   Pagination,
-  Seo
+  Seo,
 } from "../components"
 import { H1, P } from "../styles"
 
