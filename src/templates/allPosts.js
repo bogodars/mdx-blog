@@ -25,7 +25,8 @@ const allPosts = ({ pageContext, data }) => {
       <FeatureImage />
       <Content>
         <H1 textAlign="center" margin="0 0 1rem 0">
-          This is some dummy text
+          This blog made with React Gatsby and mdx. I guess soon it will be more
+          useful data.
         </H1>
         <P color="dark2" textAlign="center">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad tempore
